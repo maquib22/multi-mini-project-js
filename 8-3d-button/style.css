@@ -30,6 +30,7 @@
     transform-style: preserve-3d;
     outline: none;
     border: none;
+    transition: transform 0.5s;
 }
 
 .btn::before{
@@ -54,7 +55,9 @@
     transform: rotateY(-90deg);
     transform-origin: right;
 }
-
+.btn:hover {
+    transform: rotateX(30deg) rotateZ(0);
+}
 
 
 

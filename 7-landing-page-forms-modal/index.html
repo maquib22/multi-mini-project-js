@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page Modals</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&family=Josefin+Sans:wght@300;400;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="banner-text">
+            <h1>Akio Welcome</h1>
+            <p>happy to see you here</p>
+        </div>
+        <div class="btns">
+            <button class="btn btn-login">Login</button>
+            <button class="btn btn-signup">Sign Up</button>
+        </div>
+        <div class="form-container" >
+            <div class="signup-form-wrapper modal" >
+                <div class="x-btn signup-x">
+                    &times;
+                </div>
+                <div class="form-header">
+                    <h1>Akio</h1>
+                    <h3>Join Us</h3>
+                </div>
+                <form action="" class="form">
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="input-group">
+                        <i class="far fa-envelope"></i>
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-key"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <button type="button" >Sign Up</button>
+                </form>
+            </div>
+            <div class="login-form-wrapper modal" >
+                <div class="x-btn login-x">
+                    &times;
+                </div>
+                <div class="form-header">
+                    <h1>Akio</h1>
+                    <h3>Login</h3>
+                </div>
+                <form action="" class="form">
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fas fa-key"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <button type="button" >Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

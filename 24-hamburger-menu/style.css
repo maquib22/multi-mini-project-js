@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.5)), url(images/bg.jpg) fixed center no-repeat;
+    background-size: cover;
+}
+
+.hamburger-menu {
+    width: 55px;
+    height: 55px;
+    background-color: #67b67b;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+    transition: all .5s;
+}
+
+.change .hamburger-menu {
+    background-color: #eef0eb;
+}
+
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: #eee;
+    margin: 2px 0;
+    transform-origin: right;
+    transition: all .5s;
+}
+
+.change .line-1 {
+    transform: rotate(-40deg) translateY(-5px);
+    background-color: #67b67b;
+}
+.change .line-2 {
+    opacity: 0;
+}
+.change .line-3 {
+    transform: rotate(40deg) translateY(5px);
+    background-color: #67b67b;
+}
+
+.bg-cover {
+    background-color: rgba(103, 182, 123, .9);
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    top: 35px;
+    right: 35px;
+    z-index: 100;
+    border-radius: 50%;
+    transition: transform .5s;
+}
+
+.change .bg-cover {
+    transform: scale(150);
+
+}
+
+.nav-list {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    z-index: 200;
+}
+
+.nav-item {
+    margin: 1.5vh 0;
+}
+
+.nav-link {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    transition: letter-spacing 0.2s;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.change  .nav-link{
+    opacity: 1;
+    visibility: visible;
+}
+.nav-link:hover {
+    letter-spacing: .8rem;
+}

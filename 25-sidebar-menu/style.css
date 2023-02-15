@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Slabo 27px', sans-serif;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --main-bg-color: #2e2e2e;
+    --primary-color: #524d4d;
+    --secondarycolor: #777171;
+    --textcolor: #9c9393;
+    --hover-text-color: #bdb8b8;
+    --active-icon-color: #2ae7e7;
+}
+
+.sidebar {
+    width: 15vw;
+    height: 100vh;
+    background-color: var(--main-bg-color);
+    position: fixed;
+    padding: 1.5rem, 1rem;
+    box-sizing: border-box;
+}
+.card {
+    display: flex;
+}
+
+.admin-img {
+    width: 5rem;
+    border-radius: 0.5rem;
+}
+
+.card-body {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card-title {
+    font-size: 2rem;
+    margin-right: 3rem;
+    color: var(--textcolor);
+    letter-spacing: .1rem;
+}
+.card-subtitle {
+    font-size: 1.8rem;
+    color: var(--secondarycolor);
+}
+
+.search-form {
+    margin: 2rem 0 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding:  0 1rem;
+    font-size: 1.6rem;
+    columns: var(--textcolor);
+    letter-spacing: 0.1rem;
+}
+.search-button {
+    background-color: transparent;
+    border: none;
+    transform: translateX(-150%);
+}
+.search-button i {
+    font-size: 2rem;
+    color: var(--secondarycolor);
+}
+
+.nav-list {
+    margin-top: 3rem;
+}
+
+.nav-item {
+    margin: 2rem 0;
+}
+
+.nav-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--textcolor);
+}
+
+.nav-link-text {
+    font-size: 1.8rem;
+    padding-left: 1rem;
+    flex-grow: 1;
+}
+
+.nav-link i:first-child {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--primary-color);
+}
+
+
+.main-section {
+    width: 85vw;
+    position: relative;
+    left: 15vw;
+}
+
+.header {
+    width: inherit;
+    height: 100vh;
+    background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.5)), url(images/bg.png) center no-repeat;
+    background-size: cover;
+}
+
+.heading {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12rem;
+    color: #fff;
+    letter-spacing: 1rem;
+}

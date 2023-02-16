@@ -15,6 +15,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .form-wrapper {
@@ -157,4 +158,23 @@ html {
     color: #fff;
     margin-top: 3rem;
     cursor: pointer;
+}
+
+.next-btn {
+    margin-top: 3rem;
+    width: 16rem;
+    height: 4rem;
+    background: linear-gradient(to right, #3ab19b, #4cbf91);
+    border: 0.1rem solid #fff;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: all 1s;
+}
+
+.next-btn:hover {
+    transform: scale(1.2);
 }

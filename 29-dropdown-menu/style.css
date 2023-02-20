@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'EB Garamond', serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(255,255,255,.4), 
+        rgba(255,255,255,.2)), url(images/bg.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.banner {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+}
+
+.banner-text {
+    text-align: center;
+    font-size: 7rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    text-shadow: 0 .2rem .5rem #888;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item{
+    margin-top: 2rem;
+    text-align: center;
+    width: 26vw;
+}
+
+.nav-link {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #245f9b;
+    letter-spacing: .1rem;
+    text-shadow: 0 .2rem .5rem #b8b8b8;
+}
+
+.dropdown {
+    margin-top: 1rem;
+    background-color: #fff;
+    position: relative;
+    z-index: 100;
+    opacity: 0;
+    visibility: 0;
+    height: 0;
+    transition: all .1s;
+}
+
+.nav-item:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+}
+.dropdown-item {
+    text-align: left;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.dropdown-item:last-child {
+    padding-bottom: 2rem;
+}
+
+.dropdown-link {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #245f9b;
+}
+
+.dropdown p {
+    font-size: 1.6rem;
+    color: #5f6061;
+}

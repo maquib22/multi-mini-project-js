@@ -5,10 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <style>
+        body  {
+            background: rgb(103,97,205);
+            background: linear-gradient(90deg, rgba(103,97,205,1) 0%, rgba(9,9,121,1) 35%, rgba(5,103,183,1) 65%, rgba(0,212,255,1) 100%);
+            color: #fff;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        .projects{
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+        .project-list {
+            max-width: 600px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            background: #e0e0e0;
+            box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            letter-spacing: 2px;
+            outline: none;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            text-align: center;
+            padding: 10px;
+
+        }
+    </style>
 </head>
 <body>
-    <h1>This is Index page where you can see multiple project</h1>
+    <h1 >This is Index page where you can see multiple project</h1>
 
-    <a href="./1-sign-up-form/index.html">first project</a>
+    <div class="projects">
+        <div class="project-list">
+            <a href="./1-sign-up-form/index.html">Sign Up Form</a>
+        </div>
+        <div class="project-list">
+            <a href="./2-produt-card/index.html">Product Card</a>
+        </div>
+        <div class="project-list">
+            <a href="./3-dark-mode-theme/index.html">Dark and light Theme</a>
+        </div>
+        <div class="project-list">
+            <a href="./5-3d-menu/index.html">3D Menu</a>
+        </div>
+        <div class="project-list">
+            <a href="./6-3d-landing-page/index.html">Landing Page</a>
+        </div>
+        <div class="project-list">
+            <a href="./7-landing-page-forms-modal/index.html">Form Modal</a>
+        </div>
+
+        
+    </div>
 </body>
 </html>

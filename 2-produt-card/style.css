@@ -203,3 +203,32 @@ html {
 .price span:last-child {
     font-weight: bold;
 }
+
+@media (max-width:500px) {
+    .card-wrapper {
+        width: 30rem;
+        height: 70rem;
+        padding: 0 !important;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+    }
+    .card {
+        max-width: 30rem;
+        width: 100%;
+    }
+    .shoe-1 {
+        width: 20rem;
+        top: 3.5rem;
+        right: -2.2rem;
+    }
+    .container.change .shoe-1 {
+        transform: translateX(-50rem) rotate(45deg);
+    }
+    .shoe-2 {
+        width: 20rem;
+        top: 1rem;
+        right: -40rem;
+    
+    }
+}

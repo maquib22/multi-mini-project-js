@@ -84,11 +84,17 @@ html {
     html {
         font-size: 50%;
     }
+    .menu {
+        padding: 0 20rem;
+    }
 }
 
 @media (max-width:1300px) {
     html {
         font-size: 40%;
+    }
+    .menu {
+        padding: 0 15rem;
     }
 }
 
@@ -102,10 +108,16 @@ html {
     html {
         font-size: 20%;
     }
+    .menu {
+        padding: 0 10rem;
+    }
 }
 
 @media (max-width:800px) {
     html {
-        font-size: 10%;
+        font-size: 15%;
+    }
+    .menu {
+        padding: 0 5rem;
     }
 }

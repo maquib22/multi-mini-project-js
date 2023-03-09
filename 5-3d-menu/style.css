@@ -78,3 +78,34 @@ html {
 .menu-item:hover i {
     color: #6464ff;
 }
+
+
+@media (max-width:1550px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width:1300px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media (max-width:1024px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+@media (max-width:800px) {
+    html {
+        font-size: 20%;
+    }
+}
+
+@media (max-width:800px) {
+    html {
+        font-size: 10%;
+    }
+}

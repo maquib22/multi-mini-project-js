@@ -206,3 +206,36 @@ html {
     transform:  rotateY(90deg) translateX(8rem);
     transform-origin: right;
 }
+
+
+@media (max-width:1340px) {
+    html{
+        font-size: 50%;
+    }
+
+}
+
+@media (max-width:1100px) {
+    .container {
+        padding: 2rem;
+    }
+    .column-reverse{
+        flex-direction: column-reverse;
+    }
+    .header {
+        width: 100%;
+        height: auto;
+        margin: 2rem;
+    }
+    .boxes {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:1340px) {
+    html{
+        font-size: 38%;
+    }
+        
+}

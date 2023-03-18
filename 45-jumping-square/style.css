@@ -11,6 +11,8 @@ html {
 .container {
     width: 100%;
     height: 100vh;
+    display: grid;
+    place-items: center;
 }
 
 .wrapper {
@@ -20,6 +22,7 @@ html {
     border-radius: 5rem;
     box-shadow: 2rem 2rem 6rem #888;
     position: relative;
+    overflow: hidden;
 }
 
 .wrapper div {
@@ -57,16 +60,44 @@ html {
     background-color: coral;
     border-radius: 1rem 1rem 0 0 ;
     bottom: 0;
+    transform-origin: bottom center;
 }
 
 .left-stick {
     left: 15rem;
     box-shadow: 0.2rem 0 0.5rem #555;
+    animation: leftStickAnim 2s infinite linear;
+}
+
+@keyframes leftStickAnim {
+    0%, 30% {
+        transform: rotateZ(0);
+    }
+    50%, 65% {
+        transform: rotateZ(2deg);
+    }
+    80%, 100% {
+        transform: rotateZ(0);
+    }
 }
 
 .right-stick {
     right: 15rem;
     box-shadow: 0.2rem 0 0.5rem #555;
+    animation: rightStickAnim 2s infinite linear;
+
+}
+
+@keyframes rightStickAnim {
+    0%, 30% {
+        transform: rotateZ(0);
+    }
+    50%, 65% {
+        transform: rotateZ(-2deg);
+    }
+    80%, 100% {
+        transform: rotateZ(0);
+    }
 }
 
 .square {

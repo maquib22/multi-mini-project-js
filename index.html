@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <style>
-        body  {
-            background: rgb(103,97,205);
-            background: linear-gradient(90deg, rgba(103,97,205,1) 0%, rgba(9,9,121,1) 35%, rgba(5,103,183,1) 65%, rgba(0,212,255,1) 100%);
+         body {
             color: #fff;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            height: 100vh;
         }
         h1 {
             text-align: center;
@@ -46,6 +48,20 @@
             padding: 10px;
 
         }
+
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -78,6 +94,15 @@
         </div>
         <div class="project-list">
             <a href="./10-landing-page/index.html">LANDING PAGE</a>
+        </div>
+        <div class="project-list">
+            <a href="./11-grid-gallery/index.html">Grid Gallery</a>
+        </div>
+        <div class="project-list">
+            <a href="./12-pricing-cards/index.html">Pricing Card</a>
+        </div>
+        <div class="project-list">
+            <a href="./14-toggle-button/index.html">Toggle Button</a>
         </div>
 
         

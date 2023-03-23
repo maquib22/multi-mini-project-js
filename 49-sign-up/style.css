@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0.8), rgba(0,0,0,0.7)), url(images/bg1.jpeg) center no-repeat;
+    background-size: cover;
+}
+
+.banner {
+    color: #fff;
+    width: 46.875rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner-heading {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    border-top: .4375rem solid #fff;
+    border-bottom: .4375rem solid #fff;
+}
+
+.arrow {
+    font-size: 3.125rem;
+    margin-bottom: 1.875rem;
+    animation: anim 3s infinite;
+}
+
+.banner-btn {
+    width: 12.5rem;
+    padding: .9375rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.0625rem;
+    text-transform: uppercase;
+    letter-spacing: .0625rem;
+    background: transparent;
+    color: #fff;
+    border-radius: 3.125rem;
+    border: .125rem solid #fff;
+    outline: none;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.banner-btn:hover {
+    transform: translateY(-0.0625rem);
+}
+
+@keyframes anim {
+    0%{  transform: translateY(0);}
+    20%{  transform: translateY(0);}
+    40%{  transform: translateY(-1.875rem);}
+    50%{  transform: translateY(0);}
+    60%{  transform: translateY(-0.9375rem);}
+    80%{  transform: translateY(0);}
+    100%{  transform: translateY(0);}
+}
+
+.form-container {
+    display: flex;
+    width: 50rem;
+    height: 37.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 1.25rem 3.125rem rgba(0, 0, 0, .4);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s;
+}
+
+.sign-up-form {
+    width: 50%;
+    background-color: #232328;
+    padding: 7.5rem 3.125rem;
+    box-sizing: border-box;
+}
+.form-input {
+    width: 18.75rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.125rem;
+    letter-spacing: .0625rem;
+    color: #cc683c;
+    background-color: transparent;
+    border: none;
+    border-bottom: .125rem solid #fff;
+    margin-bottom: 3.125rem;
+    outline: none;
+    padding: .625rem 0;
+    transition: border-bottom-color .8s;
+}
+
+.form-input:focus {
+    border-bottom-color: #cc683c;
+}
+
+.sign-up-form p {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.125rem;
+    letter-spacing: .0625rem;
+    font-weight: 200;
+    margin-bottom: .5rem;
+}
+
+.sign-up-form label {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: .9375rem;
+    letter-spacing: .0625rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.sign-up-form input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1.875rem;
+    height: .9375rem;
+    background-color: #fff;
+    outline: none;
+    border-radius: 1.25rem;
+    margin: 0 .5rem;
+    box-shadow: inset 0 0 .625rem rgba(0, 0, 0, .4);
+    position: relative;
+    transition: background-color .5s;
+}
+
+.sign-up-form input:checked[type="checkbox"] {
+    background-color: #cc683c;
+}
+
+.sign-up-form input[type="checkbox"]::before {
+    content: '';
+    width: 17px;
+    height: 17px;
+    background-color: #aaa;
+    position: absolute;
+    border-radius: 50%;
+    top: -1px;
+    left: -4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
+    transition: left .5s;
+}
+
+.sign-up-form input:checked[type="checkbox"]::before {
+    left: 18px;
+}
+
+.sign-up-form button{
+    display: block;
+    margin-top: 80px;
+    width: 150px;
+    padding: 8px 5px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    outline: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.header {
+    width: 50%;
+    background: linear-gradient(rgba(0,0,0.4), rgba(0,0,0,0.2)), url(images/bg2.jpeg) center no-repeat;
+    background-size: cover;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, .3);
+    position: relative;
+}
+
+.header h1 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+.x-btn {
+    position: absolute;
+    bottom: -6%;
+    right: 1%;
+    font-size: 23px;
+    font-weight: bold;
+    color: #262626;
+    cursor: pointer;
+}

@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 900px;
+    height: 100vh;
+    margin: 0 auto;
+    pad: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-div {
+    width: 40rem;
+    border: 1px solid gray;
+    padding: 1rem;
+    background-color: #005490;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.counter-div > * {
+    margin-bottom: 2rem;
+}
+
+.count {
+    font-size: 4rem;
+}
+
+.buttons button {
+    padding: 1rem;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.buttons .substract {
+    background-color: orangered;
+}
+
+.buttons .reset {
+    background-color: #fff;
+    color: #1c2b2d;
+}
+
+.buttons .add {
+    background-color: green;
+}

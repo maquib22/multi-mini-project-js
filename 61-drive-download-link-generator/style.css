@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+    --white: #fff;
+    --black: #1c2b2d;
+    --blue: #31326f;
+    --color-primary: #9d0191;
+   --color-sec: #db6400;
+   --color-grey: #eee;
+   --color-dark-grey: #222831;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.instructions {
+    font-size: 1.6rem;
+    width: 30%;
+    height: 100vh;
+    background-color: var(--black);
+    padding-top: 5rem;
+    color: #eee;
+
+}
+
+.instructions h2 {
+    font-size: 3.5rem;
+    color: var(--color-sec);
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.instructions h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    height: 2px;
+    background-color: #eee;
+}
+
+.instructions ol {
+    padding: 1rem 0 0 1.5rem;
+
+}
+
+.instructions ol a {
+    color: var(--color-sec);
+    text-decoration: none;
+}
+
+.download-link {
+    width: 70%;
+    padding-top: 5rem;
+}
+
+.download-link section {
+    border: 2px solid var(--color-primary);
+    border-radius: 0 0 5px 5px;
+}
+
+main h1 {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 5rem;
+    color: var(--color-primary);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+main input[type=radio] {
+    /* display: none; */
+}
+
+main nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #eee;
+    padding: 5px;
+    position: relative;
+    background-color: var(--color-grey);
+    z-index: 1;
+}
+
+main nav label {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1rem;
+    position: relative;
+    color: var(--color-dark-grey);
+    cursor: pointer;
+}
+
+main nav label i {
+    padding-right: 5px;
+    color: var(--color-sec);
+}
+
+nav .slide {
+    position: absolute;
+    top: 0;
+    left: 3%;
+    width: 26%;
+    height: 100%;
+    background-color: var(--color-primary);
+    z-index: -1;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+#register:checked ~ nav .slide {
+    left: 31%;
+}
+
+#reset:checked ~ nav .slide {
+    left: 66%;
+}

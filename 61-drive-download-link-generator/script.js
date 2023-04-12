@@ -24,9 +24,13 @@ function generateLink(e) {
                 
                 // navigator.clipboard.writeText(downloadLink.value)
 
-                target.select();
-                document.execCommand("copy");
-                alert("Link has been copid to clipboard")
+                // target.select();
+                // document.execCommand("copy");
+
+                navigator.clipboard.writeText(target.value).then(() => {
+                    alert("Link has been copid to clipboard")
+
+                })
             }
         }
 
@@ -34,5 +38,33 @@ function generateLink(e) {
         copy.addEventListener("click", () => {
             return copyText(downloadLink)
         })
+
+        //=========== embed audio =============
+        const audio1 = '<audio width="300" height="32" controls="controls" src="';
+        const audio2 = '" type="audio/mp3"></audio>';
+        const embedAudio = document.getElementById("embed-audio");
+        embedAudio.value =`${audio1}${downloadLink.value}${audio2}`;
+        // console.log(embedAudio.value);
+        const copyAudio = document.querySelector(".copy-audio");
+        copyAudio.addEventListener("click", () => {
+            return copyText(embedAudio)
+        })
+
+
+        //=========== embed Video =============
+        const getVideoLink = gLink.value.replace("/view?ups=sharing", "")
+
+        const video1 = '<iframe src="';
+        const video2 = '/preview width="560" height="315"></iframe>';
+        const embedVideo = document.getElementById("embed-video");
+        embedVideo.value =`${video1}${downloadLink.value}${video2}`;
+        const copyVideo = document.querySelector(".copy-video");
+        copyVideo.addEventListener("click", () => {
+            return copyText(embedVideo)
+        })
+
+
+    }else {
+        alert("Please Enter a Google Drive File Name")
     }
 }
